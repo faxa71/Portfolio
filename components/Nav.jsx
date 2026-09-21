@@ -9,16 +9,16 @@ export default function Nav() {
       <div className="hidden sm:flex items-start gap-6">
         <span className="text-sm text-faint pt-0.5">Ссылки</span>
         <nav className="flex flex-col items-end gap-2">
-          <ArrowLink href="/cv">CV</ArrowLink>
-          <ArrowLink href="https://linkedin.com" external>Linkedin</ArrowLink>
-          <ArrowLink href="https://t.me" external>Telegram</ArrowLink>
+          <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
+          <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
+          <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
           <ArrowLink href="/#cases">Кейсы</ArrowLink>
         </nav>
       </div>
       <nav className="flex sm:hidden flex-col items-end gap-2">
-        <ArrowLink href="/cv">CV</ArrowLink>
-        <ArrowLink href="https://linkedin.com" external>Linkedin</ArrowLink>
-        <ArrowLink href="https://t.me" external>Telegram</ArrowLink>
+        <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
+        <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
+        <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
         <ArrowLink href="/#cases">Кейсы</ArrowLink>
       </nav>
     </header>
