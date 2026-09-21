@@ -24,6 +24,13 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Hide the native cursor only once CustomCursor confirms a fine pointer
+   is present (mouse/trackpad) — touch devices are never affected. */
+html.custom-cursor-active,
+html.custom-cursor-active * {
+  cursor: none !important;
+}
+
 /* Fixed film-grain texture over the whole page for a less flat, more
    premium dark background. Purely decorative, no pointer events. */
 .grain-overlay {

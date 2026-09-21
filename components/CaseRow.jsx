@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 
 /**
  * A single row in the case list table. On sm+ uses a CSS grid with the
@@ -12,27 +11,13 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
  * CaseList.jsx / app/cases/page.jsx uses the identical grid-template so
  * "ОПИСАНИЕ" and "ГОД" always line up with the data below them. On
  * mobile there's a simpler single-line fallback with no fixed columns.
+ * No arrow icon (Figma's row has none).
  */
 export default function CaseRow({ item }) {
   const disabled = !item.live;
-  const rowRef = useRef(null);
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const springConfig = { stiffness: 300, damping: 30, mass: 0.5 };
-  const sx = useSpring(mx, springConfig);
-  const sy = useSpring(my, springConfig);
-
-  const handleMouseMove = (e) => {
-    if (disabled || !rowRef.current) return;
-    const rect = rowRef.current.getBoundingClientRect();
-    mx.set(e.clientX - rect.left);
-    my.set(e.clientY - rect.top);
-  };
 
   const rowContent = (
     <motion.div
-      ref={rowRef}
-      onMouseMove={handleMouseMove}
       initial="rest"
       whileHover={disabled ? "rest" : "hover"}
       animate="rest"
@@ -46,17 +31,6 @@ export default function CaseRow({ item }) {
         className="pointer-events-none absolute inset-0 bg-white/[0.05] -z-10"
       />
       <span className="pointer-events-none absolute inset-x-1/2 bottom-0 h-px w-screen -translate-x-1/2 bg-line" />
-
-      {!disabled && (
-        <motion.span
-          variants={{ rest: { opacity: 0, scale: 0.85 }, hover: { opacity: 1, scale: 1 } }}
-          transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          style={{ left: sx, top: sy }}
-          className="pointer-events-none absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-white px-3 py-1.5 text-xs font-medium text-black sm:flex"
-        >
-          Смотреть проект
-        </motion.span>
-      )}
 
       {/* sm+: grid matching the header's 702fr / 464fr / 74fr columns */}
       <div className="hidden sm:grid grid-cols-[702fr_464fr_74fr] items-center w-full min-w-0">
