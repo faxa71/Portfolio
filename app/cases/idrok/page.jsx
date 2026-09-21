@@ -64,7 +64,7 @@ export default function IdrokCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/idrok/o-proekte.png" label="idrok — после «О проекте»" ratio="3960/2160" />
+            <SiteImage src="/images/idrok/o-proekte.jpg" label="idrok — после «О проекте»" ratio="3960/2160" />
           </Reveal>
 
           <CaseSection
@@ -92,7 +92,7 @@ export default function IdrokCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/idrok/zadacha.png" label="idrok — после «Задача и контекст»" ratio="3960/2160" />
+            <SiteImage src="/images/idrok/zadacha.jpg" label="idrok — после «Задача и контекст»" ratio="3960/2160" />
           </Reveal>
 
           <CaseSection
@@ -126,7 +126,7 @@ export default function IdrokCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/idrok/pogruzhenie.png" label="idrok — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/idrok/pogruzhenie.jpg" label="idrok — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -161,7 +161,7 @@ export default function IdrokCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/idrok/scenarii.png" label="idrok — после «Проектирование пользовательских сценариев»" ratio="3840/2160" />
+            <SiteImage src="/images/idrok/scenarii.jpg" label="idrok — после «Проектирование пользовательских сценариев»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection
