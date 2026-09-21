@@ -36,6 +36,7 @@ export default function CaseRow({ item }) {
       initial="rest"
       whileHover={disabled ? "rest" : "hover"}
       animate="rest"
+      data-hide-cursor={disabled ? undefined : ""}
       className={`group relative flex items-center px-4 sm:px-[100px] h-14 ${
         disabled ? "cursor-default" : "cursor-pointer"
       }`}

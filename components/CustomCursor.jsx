@@ -12,6 +12,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 export default function CustomCursor() {
   const [active, setActive] = useState(false);
   const [hovering, setHovering] = useState(false);
+  const [suppressed, setSuppressed] = useState(false);
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
   const springConfig = { stiffness: 500, damping: 40, mass: 0.5 };
@@ -33,6 +34,11 @@ export default function CustomCursor() {
       const target = e.target;
       const interactive = target && target.closest && target.closest("a, button, [role='button']");
       setHovering(!!interactive);
+      // Elements that show their own cursor-following label (e.g. case
+      // rows) hide the dot instead of overlapping it — the two whites
+      // blending together looked broken.
+      const ownsCursor = target && target.closest && target.closest("[data-hide-cursor]");
+      setSuppressed(!!ownsCursor);
     };
 
     window.addEventListener("mousemove", move);
@@ -45,7 +51,7 @@ export default function CustomCursor() {
     };
   }, [x, y]);
 
-  if (!active) return null;
+  if (!active || suppressed) return null;
 
   return (
     <motion.div
