@@ -45,7 +45,7 @@ export default function NexoraCase() {
           <p className="max-w-content text-[15px] leading-relaxed text-white/85 mb-8">
             Коротко: VR-платформа, объединяющая работу и игры в одном пространстве. Спроектировал интерфейс и сценарии для двух типов пользователей — новичков и опытных игроков. Отдельно сделал лендинг, который демонстрирует технологичность продукта.
           </p>
-          <SiteImage src="/images/nexora/hero.png" label="nexora — hero" ratio="960/481" />
+          <SiteImage src="/images/nexora/hero.jpg" label="nexora — hero" ratio="960/481" />
         </Reveal>
 
         <div className="flex flex-col gap-14 pb-20">
@@ -64,7 +64,7 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/nexora/o-proekte.png" label="nexora — после «О проекте»" ratio="2880/2048" />
+            <SiteImage src="/images/nexora/o-proekte.jpg" label="nexora — после «О проекте»" ratio="2880/2048" />
           </Reveal>
 
           <CaseSection
@@ -91,8 +91,8 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05} className="flex flex-col gap-6">
-            <SiteImage src="/images/nexora/zadacha-1.png" label="nexora — задача 1" ratio="1732/638" className="rounded-[24px]" />
-            <SiteImage src="/images/nexora/zadacha-2.png" label="nexora — задача 2" ratio="1284/896" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/zadacha-1.jpg" label="nexora — задача 1" ratio="1732/638" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/zadacha-2.jpg" label="nexora — задача 2" ratio="1284/896" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -118,7 +118,7 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/nexora/lending.png" label="nexora — лендинг" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/lending.jpg" label="nexora — лендинг" ratio="3840/2160" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -147,7 +147,7 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/nexora/itogi.png" label="nexora — итоги" ratio="960/527" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/itogi.jpg" label="nexora — итоги" ratio="960/527" className="rounded-[24px]" />
           </Reveal>
         </div>
       </main>
