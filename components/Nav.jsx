@@ -1,4 +1,5 @@
 import ArrowLink from "./ArrowLink";
+import Magnetic from "./Magnetic";
 
 export default function Nav() {
   return (
@@ -9,10 +10,18 @@ export default function Nav() {
       <div className="hidden sm:flex items-start gap-6">
         <span className="text-sm text-faint pt-0.5">Ссылки</span>
         <nav className="flex flex-col items-end gap-2">
-          <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
-          <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
-          <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
-          <ArrowLink href="/cases">Кейсы</ArrowLink>
+          <Magnetic strength={0.2}>
+            <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
+          </Magnetic>
+          <Magnetic strength={0.2}>
+            <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
+          </Magnetic>
+          <Magnetic strength={0.2}>
+            <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
+          </Magnetic>
+          <Magnetic strength={0.2}>
+            <ArrowLink href="/cases">Кейсы</ArrowLink>
+          </Magnetic>
         </nav>
       </div>
       <nav className="flex sm:hidden flex-col items-end gap-2">

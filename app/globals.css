@@ -23,3 +23,22 @@ body {
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Hide the native cursor only once CustomCursor confirms a fine pointer
+   is present (mouse/trackpad) — touch devices are never affected. */
+html.custom-cursor-active,
+html.custom-cursor-active * {
+  cursor: none !important;
+}
+
+/* Fixed film-grain texture over the whole page for a less flat, more
+   premium dark background. Purely decorative, no pointer events. */
+.grain-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
