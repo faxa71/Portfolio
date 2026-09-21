@@ -12,14 +12,14 @@ export default function Nav() {
           <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
           <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
           <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
-          <ArrowLink href="/#cases">Кейсы</ArrowLink>
+          <ArrowLink href="/cases">Кейсы</ArrowLink>
         </nav>
       </div>
       <nav className="flex sm:hidden flex-col items-end gap-2">
         <ArrowLink href="/cv.pdf" external>CV</ArrowLink>
         <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" external>Linkedin</ArrowLink>
         <ArrowLink href="https://t.me/ffreyer" external>Telegram</ArrowLink>
-        <ArrowLink href="/#cases">Кейсы</ArrowLink>
+        <ArrowLink href="/cases">Кейсы</ArrowLink>
       </nav>
     </header>
   );

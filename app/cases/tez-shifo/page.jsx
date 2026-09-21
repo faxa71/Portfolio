@@ -27,7 +27,7 @@ export default function TezShifoCase() {
 
       <main className="max-w-[1440px] mx-auto px-4 sm:px-[100px]">
         <Reveal className="pt-10">
-          <ArrowLink href="/#cases" arrow="left">Назад к кейсам</ArrowLink>
+          <ArrowLink href="/cases" arrow="left">Назад к кейсам</ArrowLink>
         </Reveal>
         <Reveal delay={0.03} className="pt-6 max-w-content">
           <p className="text-xs text-faint mb-4">Июль 2024</p>

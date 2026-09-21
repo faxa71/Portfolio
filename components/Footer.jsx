@@ -16,7 +16,7 @@ export default function Footer() {
           <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </motion.button>
-      <ArrowLink href="/#cases" arrow="right">Кейсы</ArrowLink>
+      <ArrowLink href="/cases" arrow="right">Кейсы</ArrowLink>
       <ArrowLink href="mailto:madiyarovfaxriddin@gmail.com" arrow="right">Писать мне</ArrowLink>
     </footer>
   );
