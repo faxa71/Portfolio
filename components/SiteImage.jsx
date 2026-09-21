@@ -20,7 +20,7 @@ export default function SiteImage({
 
   return (
     <div
-      className={`relative w-full overflow-hidden bg-gradient-to-br from-[#181818] via-panel to-black ${className}`}
+      className={`relative w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-[#181818] via-panel to-black ${className}`}
       style={{ aspectRatio: ratio }}
     >
       {!failed && (
