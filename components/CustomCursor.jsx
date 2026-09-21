@@ -50,7 +50,7 @@ export default function CustomCursor() {
   return (
     <motion.div
       aria-hidden
-      className={`pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference transition-[width,height] duration-200 ease-out ${
+      className={`pointer-events-none fixed left-0 top-0 z-[10050] rounded-full bg-white mix-blend-difference transition-[width,height] duration-200 ease-out ${
         hovering ? "w-10 h-10" : "w-2.5 h-2.5"
       }`}
       style={{ x: sx, y: sy, translateX: "-50%", translateY: "-50%" }}
