@@ -1,7 +1,5 @@
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 import IntroScreen from "@/components/IntroScreen";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export const metadata = {
   metadataBase: new URL("https://faxriddeen.vercel.app"),
@@ -28,8 +26,6 @@ export default function RootLayout({ children }) {
       <body className="font-sans bg-bg text-white antialiased">
         <div className="grain-overlay" aria-hidden="true" />
         <IntroScreen />
-        <CustomCursor />
-        <ScrollToTopButton />
         {children}
       </body>
     </html>
