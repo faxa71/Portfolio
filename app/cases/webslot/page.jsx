@@ -45,7 +45,7 @@ export default function WebslotCase() {
           <p className="max-w-content text-[15px] leading-relaxed text-white/85">
             Коротко: SaaS-платформа для салонов красоты и мастеров: онлайн-запись, расписание, CRM, аналитика и интеграция с WhatsApp/Telegram. Отвечал за UX/UI дизайн сайта и приложения — от структуры до визуального языка.
           </p>
-          <SiteImage src="/images/webslot/hero.png" label="webslot — hero" ratio="3840/2160" />
+          <SiteImage src="/images/webslot/hero.jpg" label="webslot — hero" ratio="3840/2160" />
         </Reveal>
 
         <div className="flex flex-col gap-14 pb-20">
@@ -64,7 +64,7 @@ export default function WebslotCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webslot/o-proekte.png" label="webslot — после «О проекте»" ratio="3840/2160" />
+            <SiteImage src="/images/webslot/o-proekte.jpg" label="webslot — после «О проекте»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection
@@ -92,7 +92,7 @@ export default function WebslotCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webslot/zadacha.png" label="webslot — после «Задача и контекст»" ratio="3840/2160" />
+            <SiteImage src="/images/webslot/zadacha.jpg" label="webslot — после «Задача и контекст»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection
@@ -125,7 +125,7 @@ export default function WebslotCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webslot/pogruzhenie.png" label="webslot — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/webslot/pogruzhenie.jpg" label="webslot — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -153,7 +153,7 @@ export default function WebslotCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webslot/analiz.png" label="webslot — после «Анализ существующего решения»" ratio="3840/2160" />
+            <SiteImage src="/images/webslot/analiz.jpg" label="webslot — после «Анализ существующего решения»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection
