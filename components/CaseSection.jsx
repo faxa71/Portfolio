@@ -10,8 +10,8 @@ import Reveal from "./Reveal";
 export default function CaseSection({ heading, body }) {
   return (
     <Reveal className="max-w-content py-2">
-      <h2 className="text-xl sm:text-2xl font-medium mb-4 text-soft">{heading}</h2>
-      <div className="flex flex-col gap-4 text-[15px] leading-relaxed text-white/85">
+      <h2 className="text-[24px] font-medium mb-4 text-white">{heading}</h2>
+      <div className="flex flex-col gap-4 text-[17px] leading-relaxed text-white/60">
         {body.map((block, i) =>
           block.type === "list" ? (
             <ul key={i} className="flex flex-col gap-2">
