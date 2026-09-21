@@ -45,7 +45,7 @@ export default function IntersoftCase() {
           <p className="max-w-content text-[15px] leading-relaxed text-white/85 mb-8">
             Коротко: Корпоративный сайт IT-компании Intersoft с услугами, кейсами, блогом и формой связи. Отвечал за полный визуальный дизайн — от концепции до финальных анимаций и микроинтеракций.
           </p>
-          <SiteImage src="/images/intersoft/hero.png" label="intersoft — hero" ratio="960/540" />
+          <SiteImage src="/images/intersoft/hero.jpg" label="intersoft — hero" ratio="960/540" />
         </Reveal>
 
         <div className="flex flex-col gap-14 pb-20">
@@ -64,7 +64,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/o-proekte.png" label="intersoft — после «О проекте»" ratio="960/636" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/o-proekte.jpg" label="intersoft — после «О проекте»" ratio="960/636" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -91,7 +91,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/zadacha.png" label="intersoft — после «Задача и контекст»" ratio="3840/2520" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/zadacha.jpg" label="intersoft — после «Задача и контекст»" ratio="3840/2520" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -118,7 +118,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/issledovanie.png" label="intersoft — исследование" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/issledovanie.jpg" label="intersoft — исследование" ratio="3840/2160" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -167,7 +167,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/itogi.png" label="intersoft — итоги" ratio="2492/1730" />
+            <SiteImage src="/images/intersoft/itogi.jpg" label="intersoft — итоги" ratio="2492/1730" />
           </Reveal>
         </div>
       </main>
