@@ -29,16 +29,18 @@ export default function CasesPage() {
         </main>
 
         <Reveal delay={0.08}>
-          <div className="relative hidden sm:grid grid-cols-[702fr_464fr_74fr] items-center max-w-[1440px] mx-auto px-4 sm:px-[100px] py-2 text-[13px] text-muted">
-            <span>#&nbsp;&nbsp;ПРОЕКТ</span>
-            <span>ОПИСАНИЕ</span>
-            <span className="text-right">ГОД</span>
-            <span className="absolute inset-x-0 bottom-0 h-px bg-line" />
-          </div>
-          <div className="max-w-[1440px] mx-auto pb-20 overflow-x-hidden">
-            {CASES.map((item) => (
-              <CaseRow key={item.slug} item={item} />
-            ))}
+          <div className="overflow-x-hidden">
+            <div className="relative hidden sm:grid grid-cols-[702fr_464fr_74fr] items-center max-w-[1440px] mx-auto px-4 sm:px-[100px] py-2 text-[13px] text-muted">
+              <span>#&nbsp;&nbsp;ПРОЕКТ</span>
+              <span>ОПИСАНИЕ</span>
+              <span className="text-right">ГОД</span>
+              <span className="pointer-events-none absolute inset-x-1/2 bottom-0 h-px w-screen -translate-x-1/2 bg-line" />
+            </div>
+            <div className="max-w-[1440px] mx-auto pb-20">
+              {CASES.map((item) => (
+                <CaseRow key={item.slug} item={item} />
+              ))}
+            </div>
           </div>
         </Reveal>
       </div>
