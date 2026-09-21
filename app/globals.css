@@ -31,6 +31,12 @@ html.custom-cursor-active * {
   cursor: none !important;
 }
 
+@keyframes border-beam-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Fixed film-grain texture over the whole page for a less flat, more
    premium dark background. Purely decorative, no pointer events. */
 .grain-overlay {
