@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import BorderBeam from "./BorderBeam";
 
 export default function HeroCTA() {
   return (
@@ -14,7 +13,6 @@ export default function HeroCTA() {
         animate="rest"
         className="relative inline-flex items-center gap-2.5 rounded-full bg-white/10 hover:bg-white/[0.15] text-white px-6 py-4 text-base transition-colors overflow-hidden"
       >
-        <BorderBeam duration={5} />
         <span>Посмотреть кейсы</span>
         <motion.span
           variants={{ rest: { x: 0 }, hover: { x: 4 } }}

@@ -6,8 +6,6 @@ import SiteImage from "@/components/SiteImage";
 import HeroCTA from "@/components/HeroCTA";
 import HeroTitle from "@/components/HeroTitle";
 import Magnetic from "@/components/Magnetic";
-import DotGrid from "@/components/DotGrid";
-import Spotlight from "@/components/Spotlight";
 
 const TIMELINE = [
   { period: "Май 2025 – Настоящее время", role: "Ведущий UX/UI дизайнер в Webase" },
@@ -19,11 +17,10 @@ const TIMELINE = [
 export default function Home() {
   return (
     <>
-      <div className="relative overflow-hidden bg-bg">
-        <DotGrid />
+      <div className="bg-bg">
         <Nav />
 
-        <main className="relative max-w-[1440px] mx-auto px-4 sm:px-[100px]">
+        <main className="max-w-[1440px] mx-auto px-4 sm:px-[100px]">
           <div className="pt-10 sm:pt-14 pb-16 max-w-[1013px]">
             <HeroTitle />
           </div>
@@ -77,7 +74,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-[28px] font-bold text-white mb-8">Нравиться</h2>
         </Reveal>
 
-        <Spotlight className="flex flex-col gap-4 sm:gap-8 rounded-[28px]">
+        <div className="flex flex-col gap-4 sm:gap-8">
           <Reveal delay={0.05}>
             <SiteImage src="/images/home/mood-1.jpg" label="референс 1" ratio="963/551" />
           </Reveal>
@@ -102,7 +99,7 @@ export default function Home() {
               </Reveal>
             </div>
           </div>
-        </Spotlight>
+        </div>
       </section>
 
       <div className="bg-bg">
