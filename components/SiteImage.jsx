@@ -20,7 +20,7 @@ export default function SiteImage({
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-[#181818] via-panel to-black ${className}`}
+      className={`group relative w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-[#181818] via-panel to-black ${className}`}
       style={{ aspectRatio: ratio }}
     >
       {!failed && (
@@ -28,7 +28,7 @@ export default function SiteImage({
           src={src}
           alt={alt}
           onError={() => setFailed(true)}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
         />
       )}
       {failed && (

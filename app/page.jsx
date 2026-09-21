@@ -4,6 +4,7 @@ import CaseList from "@/components/CaseList";
 import Reveal from "@/components/Reveal";
 import SiteImage from "@/components/SiteImage";
 import HeroCTA from "@/components/HeroCTA";
+import HeroTitle from "@/components/HeroTitle";
 
 const TIMELINE = [
   { period: "Май 2025 – Настоящее время", role: "Ведущий UX/UI дизайнер в Webase" },
@@ -19,11 +20,9 @@ export default function Home() {
         <Nav />
 
         <main className="max-w-[1440px] mx-auto px-4 sm:px-[100px]">
-          <Reveal className="pt-10 sm:pt-14 pb-16 max-w-[1013px]">
-            <h1 className="text-[28px] sm:text-[40px] lg:text-[56px] leading-[1.15] font-medium tracking-tight">
-              Создаю цифровые интерфейсы, которые интуитивны и функциональны
-            </h1>
-          </Reveal>
+          <div className="pt-10 sm:pt-14 pb-16 max-w-[1013px]">
+            <HeroTitle />
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 pb-20">
             <Reveal delay={0.05} className="sm:w-[309px] shrink-0">
