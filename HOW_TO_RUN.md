@@ -39,4 +39,4 @@ http://localhost:3000/cases/webimzo
    `live: false`) — построим их следующим шагом по той же схеме, что и
    Webimzo.
 3. Подключить настоящие ссылки на LinkedIn/Telegram в `components/Nav.jsx`
-   (сейчас там заглушки `https://linkedin.com` / `https://t.me`).
+   (сейчас там заглушки `https://linkedin.com` / `https://t.me`)

@@ -19,15 +19,30 @@ export default function Footer() {
       <ArrowLink href="/#cases" arrow="right">Кейсы</ArrowLink>
       <ArrowLink href="mailto:madiyarovfaxriddin@gmail.com" arrow="right">Писать мне</ArrowLink>
       <div className="flex items-center gap-5 mt-2">
-        <ArrowLink href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/" arrow="up-right" external>
+        <a
+          href="https://www.linkedin.com/in/madiyarov-faxriddin-1125b0293/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+        >
           LinkedIn
-        </ArrowLink>
-        <ArrowLink href="https://t.me/ffreyer" arrow="up-right" external>
+        </a>
+        <a
+          href="https://t.me/ffreyer"
+          target="_blank"
+          rel="noreferrer"
+          className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+        >
           Telegram
-        </ArrowLink>
-        <ArrowLink href="/cv.pdf" arrow="up-right" external>
+        </a>
+        <a
+          href="/cv.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+        >
           CV
-        </ArrowLink>
+        </a>
       </div>
     </footer>
   );
