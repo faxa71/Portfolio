@@ -45,7 +45,7 @@ export default function TezShifoCase() {
           <p className="max-w-content text-[15px] leading-relaxed text-white/85 mb-8">
             Коротко: Медицинская платформа, объединяющая пациентов и врачей. Спроектировал архитектуру, пользовательские сценарии и визуальный язык для двух аудиторий — пациентов и врачей.
           </p>
-          <SiteImage src="/images/tez-shifo/hero.png" label="tez shifo — hero" ratio="960/453" className="rounded-[24px]" />
+          <SiteImage src="/images/tez-shifo/hero.jpg" label="tez shifo — hero" ratio="960/453" className="rounded-[24px]" />
         </Reveal>
 
         <div className="flex flex-col gap-14 pb-20">
@@ -64,7 +64,7 @@ export default function TezShifoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/tez-shifo/issledovanie.png" label="tez shifo — исследование" ratio="960/453" className="rounded-[24px]" />
+            <SiteImage src="/images/tez-shifo/issledovanie.jpg" label="tez shifo — исследование" ratio="960/453" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -125,7 +125,7 @@ export default function TezShifoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/tez-shifo/proektirovanie.png" label="tez shifo — проектирование" ratio="960/534" className="rounded-[24px]" />
+            <SiteImage src="/images/tez-shifo/proektirovanie.jpg" label="tez shifo — проектирование" ratio="960/534" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -143,7 +143,7 @@ export default function TezShifoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/tez-shifo/design-system.png" label="tez shifo — дизайн-система" ratio="1744/686" className="rounded-[24px]" />
+            <SiteImage src="/images/tez-shifo/design-system.jpg" label="tez shifo — дизайн-система" ratio="1744/686" className="rounded-[24px]" />
           </Reveal>
 
           <CaseSection
@@ -161,7 +161,7 @@ export default function TezShifoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/tez-shifo/itogi.png" label="tez shifo — итоги" ratio="2998/1900" className="rounded-[24px]" />
+            <SiteImage src="/images/tez-shifo/itogi.jpg" label="tez shifo — итоги" ratio="2998/1900" className="rounded-[24px]" />
           </Reveal>
         </div>
       </main>
