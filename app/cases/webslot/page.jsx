@@ -125,7 +125,7 @@ export default function WebslotCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webslot/pogruzhenie.jpg" label="webslot — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/webslot/pogruzhenie.jpg" label="webslot — после «Погружение в предметную область»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection

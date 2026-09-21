@@ -64,7 +64,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/o-proekte.jpg" label="intersoft — после «О проекте»" ratio="960/636" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/o-proekte.jpg" label="intersoft — после «О проекте»" ratio="960/636" />
           </Reveal>
 
           <CaseSection
@@ -91,7 +91,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/zadacha.jpg" label="intersoft — после «Задача и контекст»" ratio="3840/2520" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/zadacha.jpg" label="intersoft — после «Задача и контекст»" ratio="3840/2520" />
           </Reveal>
 
           <CaseSection
@@ -118,7 +118,7 @@ export default function IntersoftCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/intersoft/issledovanie.jpg" label="intersoft — исследование" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/intersoft/issledovanie.jpg" label="intersoft — исследование" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection

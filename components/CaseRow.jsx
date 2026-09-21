@@ -28,9 +28,21 @@ export default function CaseRow({ item }) {
       <motion.div
         variants={{ rest: { opacity: 0 }, hover: { opacity: 1 } }}
         transition={{ duration: 0.25 }}
-        className="pointer-events-none absolute inset-0 bg-white/[0.03] -z-10"
+        className="pointer-events-none absolute inset-0 bg-white/[0.05] -z-10"
       />
       <span className="pointer-events-none absolute inset-x-1/2 bottom-0 h-px w-screen -translate-x-1/2 bg-line" />
+
+      {!disabled && (
+        <motion.span
+          variants={{ rest: { opacity: 0, x: -6 }, hover: { opacity: 1, x: 0 } }}
+          transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          className="pointer-events-none absolute right-4 sm:right-[100px] top-1/2 -translate-y-1/2 text-soft"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </motion.span>
+      )}
 
       {/* sm+: grid matching the header's 702fr / 464fr / 74fr columns */}
       <div className="hidden sm:grid grid-cols-[702fr_464fr_74fr] items-center w-full min-w-0">
@@ -45,8 +57,8 @@ export default function CaseRow({ item }) {
             )}
           </span>
         </div>
-        <span className="text-muted text-[16px] truncate pr-4">( {item.tag} )</span>
-        <span className="text-muted text-[16px] tabular-nums text-right">{item.year}</span>
+        <span className="text-muted text-[16px] truncate pr-4 transition-colors duration-300 group-hover:text-soft">( {item.tag} )</span>
+        <span className="text-muted text-[16px] tabular-nums text-right transition-colors duration-300 group-hover:text-soft pr-6">{item.year}</span>
       </div>
 
       {/* mobile: single line, no fixed columns */}

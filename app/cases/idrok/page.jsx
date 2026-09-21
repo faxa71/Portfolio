@@ -126,7 +126,7 @@ export default function IdrokCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/idrok/pogruzhenie.jpg" label="idrok — после «Погружение в предметную область»" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/idrok/pogruzhenie.jpg" label="idrok — после «Погружение в предметную область»" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection

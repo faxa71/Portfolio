@@ -91,8 +91,8 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05} className="flex flex-col gap-6">
-            <SiteImage src="/images/nexora/zadacha-1.jpg" label="nexora — задача 1" ratio="1732/638" className="rounded-[24px]" />
-            <SiteImage src="/images/nexora/zadacha-2.jpg" label="nexora — задача 2" ratio="1284/896" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/zadacha-1.jpg" label="nexora — задача 1" ratio="1732/638" />
+            <SiteImage src="/images/nexora/zadacha-2.jpg" label="nexora — задача 2" ratio="1284/896" />
           </Reveal>
 
           <CaseSection
@@ -118,7 +118,7 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/nexora/lending.jpg" label="nexora — лендинг" ratio="3840/2160" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/lending.jpg" label="nexora — лендинг" ratio="3840/2160" />
           </Reveal>
 
           <CaseSection
@@ -147,7 +147,7 @@ export default function NexoraCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/nexora/itogi.jpg" label="nexora — итоги" ratio="960/527" className="rounded-[24px]" />
+            <SiteImage src="/images/nexora/itogi.jpg" label="nexora — итоги" ratio="960/527" />
           </Reveal>
         </div>
       </main>

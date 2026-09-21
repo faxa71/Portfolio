@@ -16,7 +16,7 @@ export default function CaseList() {
     <section id="cases" className="bg-panel py-14 overflow-x-hidden">
       <div className="max-w-[1440px] mx-auto">
         <Reveal>
-          <h2 className="text-[22px] sm:text-[28px] font-medium tracking-[-0.02em] text-soft text-center px-4 sm:px-[100px] mb-8">
+          <h2 className="text-[22px] sm:text-[28px] font-medium tracking-[-0.02em] text-soft px-4 sm:px-[100px] mb-8">
             Последние кейсы
           </h2>
         </Reveal>

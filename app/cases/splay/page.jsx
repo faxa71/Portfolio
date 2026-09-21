@@ -113,7 +113,7 @@ export default function SplayCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/splay/analiz.png" label="splay — после «Исследование и инсайты»" ratio="960/557" className="rounded-[24px]" />
+            <SiteImage src="/images/splay/analiz.png" label="splay — после «Исследование и инсайты»" ratio="960/557" />
           </Reveal>
 
           <CaseSection
@@ -213,7 +213,7 @@ export default function SplayCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/splay/design-system.png" label="splay — дизайн-система" ratio="960/506" className="rounded-[24px]" />
+            <SiteImage src="/images/splay/design-system.png" label="splay — дизайн-система" ratio="960/506" />
           </Reveal>
 
           <CaseSection
@@ -242,9 +242,9 @@ export default function SplayCase() {
           />
 
           <Reveal delay={0.05} className="flex flex-col gap-6">
-            <SiteImage src="/images/splay/itogi-1.jpg" label="splay — итоги 1" ratio="960/506" className="rounded-[24px]" />
-            <SiteImage src="/images/splay/itogi-2.jpg" label="splay — итоги 2" ratio="960/506" className="rounded-[24px]" />
-            <SiteImage src="/images/splay/itogi-3.jpg" label="splay — итоги 3" ratio="960/623" className="rounded-[24px]" />
+            <SiteImage src="/images/splay/itogi-1.jpg" label="splay — итоги 1" ratio="960/506" />
+            <SiteImage src="/images/splay/itogi-2.jpg" label="splay — итоги 2" ratio="960/506" />
+            <SiteImage src="/images/splay/itogi-3.jpg" label="splay — итоги 3" ratio="960/623" />
           </Reveal>
         </div>
       </main>
