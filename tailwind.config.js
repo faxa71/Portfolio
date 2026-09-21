@@ -15,7 +15,15 @@ module.exports = {
         faint: "#70707b",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: [
+          '"Helvetica Neue"',
+          "Helvetica",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Arial",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       maxWidth: {
         content: "960px",
