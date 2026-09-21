@@ -1,13 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import {
-  motion,
-  useMotionValue,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 /**
  * Drop-in replacement for PlaceholderBlock that tries to load a real image
@@ -17,8 +11,7 @@ import {
  * automatically — no code changes needed.
  *
  * Also carries the site's shared photo motion: a subtle scroll parallax
- * (on by default), a zoom-in on hover, and an optional cursor-tilt for
- * card-like usages (set `tilt`).
+ * (on by default) and a zoom-in on hover.
  */
 export default function SiteImage({
   src,
@@ -27,7 +20,6 @@ export default function SiteImage({
   label,
   className = "",
   parallax = true,
-  tilt = false,
 }) {
   const [failed, setFailed] = useState(false);
   const containerRef = useRef(null);
@@ -38,36 +30,11 @@ export default function SiteImage({
   });
   const y = useTransform(scrollYProgress, [0, 1], parallax ? ["-6%", "6%"] : ["0%", "0%"]);
 
-  const rotateX = useMotionValue(0);
-  const rotateY = useMotionValue(0);
-  const springConfig = { stiffness: 150, damping: 16, mass: 0.4 };
-  const rX = useSpring(rotateX, springConfig);
-  const rY = useSpring(rotateY, springConfig);
-
-  const handleMouseMove = (e) => {
-    if (!tilt || !containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
-    rotateY.set(px * 8);
-    rotateX.set(-py * 8);
-  };
-
-  const handleMouseLeave = () => {
-    rotateX.set(0);
-    rotateY.set(0);
-  };
-
   return (
-    <motion.div
+    <div
       ref={containerRef}
-      onMouseMove={tilt ? handleMouseMove : undefined}
-      onMouseLeave={tilt ? handleMouseLeave : undefined}
-      style={{
-        aspectRatio: ratio,
-        ...(tilt ? { rotateX: rX, rotateY: rY, transformPerspective: 800 } : {}),
-      }}
       className={`group relative w-full overflow-hidden rounded-[28px] bg-gradient-to-br from-[#181818] via-panel to-black ${className}`}
+      style={{ aspectRatio: ratio }}
     >
       {!failed && (
         <motion.img
@@ -89,6 +56,6 @@ export default function SiteImage({
           </span>
         </div>
       )}
-    </motion.div>
+    </div>
   );
 }

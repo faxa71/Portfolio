@@ -76,26 +76,26 @@ export default function Home() {
 
         <div className="flex flex-col gap-4 sm:gap-8">
           <Reveal delay={0.05}>
-            <SiteImage src="/images/home/mood-1.jpg" label="референс 1" ratio="963/551" tilt />
+            <SiteImage src="/images/home/mood-1.jpg" label="референс 1" ratio="963/551" />
           </Reveal>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
             <Reveal delay={0.08} className="flex-1">
-              <SiteImage src="/images/home/mood-2.png" label="референс 2" ratio="1199/1067" tilt />
+              <SiteImage src="/images/home/mood-2.png" label="референс 2" ratio="1199/1067" />
             </Reveal>
             <Reveal delay={0.11} className="flex-1">
-              <SiteImage src="/images/home/mood-3.png" label="референс 3" ratio="1199/1067" tilt />
+              <SiteImage src="/images/home/mood-3.png" label="референс 3" ratio="1199/1067" />
             </Reveal>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 sm:items-stretch">
             <Reveal delay={0.05} className="flex-1">
-              <SiteImage src="/images/home/mood-4.png" label="референс 4" ratio="1584/1470" className="h-full" tilt />
+              <SiteImage src="/images/home/mood-4.png" label="референс 4" ratio="1584/1470" className="h-full" />
             </Reveal>
             <div className="flex flex-col gap-4 sm:gap-8 sm:w-[406px] shrink-0">
               <Reveal delay={0.08}>
-                <SiteImage src="/images/home/mood-5.png" label="референс 5" ratio="406/441" tilt />
+                <SiteImage src="/images/home/mood-5.png" label="референс 5" ratio="406/441" />
               </Reveal>
               <Reveal delay={0.11}>
-                <SiteImage src="/images/home/mood-6.png" label="референс 6" ratio="406/262" tilt />
+                <SiteImage src="/images/home/mood-6.png" label="референс 6" ratio="406/262" />
               </Reveal>
             </div>
           </div>
