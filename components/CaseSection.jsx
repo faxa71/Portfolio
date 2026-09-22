@@ -7,9 +7,14 @@ import Reveal from "./Reveal";
  *
  * `body` is an array of blocks: { type: "p", text } | { type: "list", items }
  */
+function slugify(text) {
+  return text.trim().toLowerCase().replace(/[^a-z0-9а-яё]+/gi, "-").replace(/(^-|-$)/g, "");
+}
+
 export default function CaseSection({ heading, body }) {
+  const id = slugify(heading);
   return (
-    <Reveal className="max-w-content py-2">
+    <Reveal className="max-w-content py-2" id={id} data-outline-heading data-outline-title={heading}>
       <h2 className="text-[24px] font-medium mb-4 text-white">{heading}</h2>
       <div className="flex flex-col gap-4 text-[17px] leading-relaxed text-white/60">
         {body.map((block, i) =>

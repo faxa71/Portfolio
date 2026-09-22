@@ -13,6 +13,7 @@ export default function Reveal({
   y = 24,
   className = "",
   as = "div",
+  ...rest
 }) {
   const Component = motion[as] ?? motion.div;
   return (
@@ -22,6 +23,7 @@ export default function Reveal({
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
       className={className}
+      {...rest}
     >
       {children}
     </Component>

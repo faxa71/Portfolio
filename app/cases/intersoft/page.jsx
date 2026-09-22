@@ -5,6 +5,7 @@ import ArrowLink from "@/components/ArrowLink";
 import SiteImage from "@/components/SiteImage";
 import CaseMeta from "@/components/CaseMeta";
 import CaseSection from "@/components/CaseSection";
+import CaseOutline from "@/components/CaseOutline";
 
 export const metadata = {
   title: "Intersoft — Deen.dsgn",
@@ -24,6 +25,7 @@ export default function IntersoftCase() {
   return (
     <>
       <Nav />
+      <CaseOutline />
 
       <main className="max-w-[1440px] mx-auto px-4 sm:px-[100px]">
         <Reveal className="pt-10">
