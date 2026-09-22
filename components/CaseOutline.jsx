@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 /**
@@ -15,7 +16,10 @@ export default function CaseOutline() {
   const [items, setItems] = useState([]);
   const [activeId, setActiveId] = useState(null);
   const [hovered, setHovered] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const observerRef = useRef(null);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const nodes = Array.from(document.querySelectorAll("[data-outline-heading]"));
@@ -40,14 +44,14 @@ export default function CaseOutline() {
     return () => observer.disconnect();
   }, []);
 
-  if (items.length < 2) return null;
+  if (!mounted || items.length < 2) return null;
 
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  return (
+  return createPortal(
     <div
       className="fixed right-6 xl:right-10 top-1/2 -translate-y-1/2 z-40 hidden lg:block"
       onMouseEnter={() => setHovered(true)}
@@ -101,6 +105,7 @@ export default function CaseOutline() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </div>,
+    document.body
   );
 }
