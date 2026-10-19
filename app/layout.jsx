@@ -1,5 +1,4 @@
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 import IntroScreen from "@/components/IntroScreen";
 
 export const metadata = {
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
       <body className="font-sans bg-bg text-white antialiased">
         <div className="grain-overlay" aria-hidden="true" />
         <IntroScreen />
-        <CustomCursor />
         {children}
       </body>
     </html>
