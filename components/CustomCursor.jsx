@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 
 /**
  * A small dot that follows the cursor and grows over clickable elements.
@@ -15,9 +15,6 @@ export default function CustomCursor() {
   const [suppressed, setSuppressed] = useState(false);
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const springConfig = { stiffness: 500, damping: 40, mass: 0.5 };
-  const sx = useSpring(x, springConfig);
-  const sy = useSpring(y, springConfig);
 
   useEffect(() => {
     const mq = window.matchMedia("(pointer: fine)");
@@ -59,7 +56,7 @@ export default function CustomCursor() {
       className={`pointer-events-none fixed left-0 top-0 z-[10050] rounded-full bg-white mix-blend-difference transition-[width,height] duration-200 ease-out ${
         hovering ? "w-10 h-10" : "w-2.5 h-2.5"
       }`}
-      style={{ x: sx, y: sy, translateX: "-50%", translateY: "-50%" }}
+      style={{ x, y, translateX: "-50%", translateY: "-50%" }}
     />
   );
 }
