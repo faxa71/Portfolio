@@ -43,7 +43,7 @@ export default function WebimzoCase() {
         <CaseMeta fields={META_FIELDS} />
 
         <Reveal delay={0.05} className="py-10">
-          <SiteImage src="/images/webimzo/hero.png" label="webimzo — hero" ratio="960/540" />
+          <SiteImage src="/images/webimzo/hero-v2.png" label="webimzo — hero" ratio="960/540" />
         </Reveal>
 
         <div className="flex flex-col gap-14 pb-20">
@@ -66,7 +66,7 @@ export default function WebimzoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webimzo/o-proekte.png" label="webimzo — после «О проекте»" ratio="960/540" />
+            <SiteImage src="/images/webimzo/o-proekte-v2.png" label="webimzo — после «О проекте»" ratio="960/540" />
           </Reveal>
 
           <CaseSection
@@ -94,7 +94,7 @@ export default function WebimzoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webimzo/zadacha.png" label="webimzo — после «Задача и контекст»" ratio="960/540" />
+            <SiteImage src="/images/webimzo/zadacha-v2.png" label="webimzo — после «Задача и контекст»" ratio="960/540" />
           </Reveal>
 
           <CaseSection
@@ -128,7 +128,7 @@ export default function WebimzoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webimzo/pogruzhenie.png" label="webimzo — после «Погружение в предметную область»" ratio="960/540" />
+            <SiteImage src="/images/webimzo/pogruzhenie-v2.png" label="webimzo — после «Погружение в предметную область»" ratio="960/540" />
           </Reveal>
 
           <CaseSection
@@ -157,7 +157,7 @@ export default function WebimzoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webimzo/analiz.png" label="webimzo — после «Анализ существующего решения»" ratio="960/540" />
+            <SiteImage src="/images/webimzo/analiz-v2.png" label="webimzo — после «Анализ существующего решения»" ratio="960/540" />
           </Reveal>
 
           <CaseSection
@@ -182,7 +182,7 @@ export default function WebimzoCase() {
           />
 
           <Reveal delay={0.05}>
-            <SiteImage src="/images/webimzo/komanda.png" label="webimzo — после «Взаимодействие с командой»" ratio="960/540" />
+            <SiteImage src="/images/webimzo/komanda-v2.png" label="webimzo — после «Взаимодействие с командой»" ratio="960/540" />
           </Reveal>
 
           <CaseSection
