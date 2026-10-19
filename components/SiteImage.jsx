@@ -56,7 +56,7 @@ export default function SiteImage({
             src={src}
             alt={alt}
             onError={() => setFailed(true)}
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+            className="absolute inset-0 h-full w-full object-cover"
           />
         )}
         {failed && (
