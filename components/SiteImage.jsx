@@ -20,6 +20,7 @@ export default function SiteImage({
   alt = "",
   ratio = "16/9",
   label,
+  caption,
   className = "",
 }) {
   const [failed, setFailed] = useState(false);
@@ -67,6 +68,9 @@ export default function SiteImage({
           </div>
         )}
       </div>
+      {caption && (
+        <p className="mt-3 text-sm leading-relaxed text-faint">{caption}</p>
+      )}
 
       {mounted &&
         createPortal(
